@@ -3,75 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>展示页面</title>
+    <title>有家房产服务</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- 导航栏 -->
-    <nav class="navbar">
-        <div class="logo">这是LOGO
-        </div>
-        <ul class="nav-links">
-            <li><a href="#home">这里是导航栏>></a></li>
-            <li><a href="#about">关于我们</a></li>
-            <li><a href="#services">服务</a></li>
-            <li><a href="#contact">联系我们</a></li>
-        </ul>
-    </nav>
-
-    <!-- 主要横幅 -->
-    <header class="hero" id="home">
-        <h1>HUAN YING</h1>
-        <p>这里是主标语</p>
-        <button class="cta-button">这是按钮</button>
+    <header>
+        <nav>
+            <div class="logo-section">
+                <img src="assets/logo-light.jpg" alt="YoHome Logo">
+                <div class="company-name">
+                    <span class="name-en">YoHome</span>
+                    <span class="name-divider">|</span>
+                    <span class="name-zh">有家</span>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#services">服务</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- 关于我们 -->
-    <section id="about" class="section">
-        <h2>关于我们</h2>
-        <div class="content">
-            <div class="text">
-                <p>这里是文字...</p>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>YOHOME Property Management</h1>
+                <p>100+民宿管理经验。 加拿大 top3 airbnb管理公司</p>
+                <div class="hero-buttons">
+                    <button class="hero-button button-services" onclick="scrollToSection('services')">服务</button>
+                    <button class="hero-button button-contact" onclick="scrollToSection('contact')">联系我们</button>
+                </div>
             </div>
-            <div class="image">
-                <img src="placeholder.jpg" alt="这是特效">
+        </section>
+
+        <section class="slogans">
+            <div class="slogan-container">
+                <div class="slogan-card">
+                    <h3>YO！Home 托管称心，收益放心</h3>
+                </div>
+                <div class="slogan-card">
+                    <p>我们熟悉每个城市的airbnb条例，立志于帮助每一个从事民宿行业的朋友，获得安全和优良的运营环境</p>
+                </div>
+                <div class="slogan-card">
+                    <p>yohome有专业的线上团队，能够满足各个时间的价格环境，以帮助客人达到最优渥的收益</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <h2>我们的服务</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="assets/service1.jpg" alt="airbnb法规咨询">
+                    </div>
+                    <div class="service-content">
+                        <h3>airbnb法规咨询</h3>
+                        <p>bc省民宿法律变化复杂，yohome提供完善的法律咨询服务。为您的运营保驾护航。欢迎咨询</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="assets/service2.jpg" alt="房屋评估">
+                    </div>
+                    <div class="service-content">
+                        <h3>房屋评估</h3>
+                        <p>我们会根据您提供的房产进行全方位的运营评估。 包括：全年收益，房屋支出，牌照申请，合法性，投资建议，以及提供设计和软装支持</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="assets/service3.jpg" alt="税务架构">
+                    </div>
+                    <div class="service-content">
+                        <h3>税务架构</h3>
+                        <p>我们会根据当地的税法，以及您自身的情况，为您提供税务架构建议，可以让您在获得高收益的同时，也能够合理的规避不必要的税务支出</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="assets/service4.jpg" alt="软装设计">
+                    </div>
+                    <div class="service-content">
+                        <h3>软装设计</h3>
+                        <p>我们拥有专业的设计师，以及软装服务，可以为您打造最适合运作民宿的风格，全方位帮您提高收益</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="assets/logo-dark.jpg" alt="Company Logo">
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#services">服务</a></li>
+                        <li><a href="#contact">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-right">
+                <h4>联系方式</h4>
+                <div class="contact-info">
+                    <p><i class="contact-icon email"></i>aiiiwannian@gmail.com</p>
+                    <p><i class="contact-icon phone"></i>(778) 987-7933</p>
+                    <p><i class="contact-icon wechat"></i>WeChat ID</p>
+                </div>
             </div>
         </div>
-    </section>
-
-    <!-- 服务展示 -->
-    <section id="services" class="section">
-        <h2>我们的服务</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <h3>服务一</h3>
-                <p>服务描述...</p>
-            </div>
-            <div class="service-card">
-                <h3>服务二</h3>
-                <p>服务描述...</p>
-            </div>
-            <div class="service-card">
-                <h3>服务三</h3>
-                <p>服务描述...</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- 联系我们 -->
-    <section id="contact" class="section">
-        <h2>联系我们</h2>
-        <form id="contact-form">
-            <input type="text" placeholder="姓名" required>
-            <input type="email" placeholder="邮箱" required>
-            <textarea placeholder="留言内容" required></textarea>
-            <button type="submit">发送</button>
-        </form>
-    </section>
-
-    <!-- 页脚 -->
-    <footer>
-        <p>&copy; 2050 公司名称. 版权所有</p>
     </footer>
 
     <script src="script.js"></script>

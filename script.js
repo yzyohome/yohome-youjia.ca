@@ -1,3 +1,13 @@
+// Add smooth scroll function for buttons
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+}
+
 // 平滑滚动
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -18,13 +28,13 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
 // 导航栏滚动效果
 let lastScroll = 0;
 window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('.navbar');
+    const header = document.querySelector('header');
     const currentScroll = window.pageYOffset;
 
-    if (currentScroll > lastScroll) {
-        navbar.style.transform = 'translateY(-100%)';
+    if (currentScroll > lastScroll && currentScroll > 50) {
+        header.style.transform = 'translateY(-100%)';
     } else {
-        navbar.style.transform = 'translateY(0)';
+        header.style.transform = 'translateY(0)';
     }
     lastScroll = currentScroll;
 }); 
